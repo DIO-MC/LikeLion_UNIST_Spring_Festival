@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: "Jua";
+  }
+  @font-face{
+	src: url("BMJUA.otf");
+	font-family: "Jua";
+}
+
+.navbar.top-menu{
+    /* background-color: pink; */
+    display:flex;
+    align-content: center;
+    color: black;
+    /* border : 5px solid pink; */
+    position : fixed;
+    width:100%;
+}
+
+.dropdown-menu.show{
+    border: 0px;
+}
+img{
+   width:100%;
+}
+
+div.image{
+    margin:0 110px 100px 30px;
+    
+}
+div#eve{
+    
+    border : 5px solid red;
+}
+div#day{
+    border : 5px solid orange;
+}
+div#head{
+    border : 5px solid yellow;
+}
+div#photo{
+    border : 5px solid green;
+}
+div#vr{
+    border : 5px solid blue;
+
+}
+div#water{
+    border : 5px solid navy;
+}
+div#night{
+    border : 5px solid purple;
+}

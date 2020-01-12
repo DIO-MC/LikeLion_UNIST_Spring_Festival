@@ -1,0 +1,28 @@
+@font-face{
+	src: url("BMJUA.otf");
+	font-family: "Jua";
+}
+
+h1, .bsk_title{
+    font-size: 25px !important;
+    padding-top: 8px;
+}
+.bsk_title{
+    text-align: center;
+    font-family: "Jua";
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.map_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.map_list img {
+    height: 80vh;
+    width: auto;
+}

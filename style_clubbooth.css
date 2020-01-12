@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: "Jua";
+  }
+  @font-face{
+	src: url("BMJUA.otf");
+	font-family: "Jua";
+}
+.title{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 30px;
+}
+/*
+.fas.fa-arrow-alt-circle-right{
+    color : black;
+}
+.fas.fa-arrow-alt-circle-left{
+    color:black;
+}
+.content{
+    padding:20px;
+}
+.card_parent{
+    margin-top:10px;
+} */    
+/* .carousel-image div img{ */
+    /* min-height: 500px; */
+    /* max-height: 500px;
+    width: auto;
+} */
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+header #map .map-container img{
+    width: 800px;
+}
+header #map .list-container img{
+    width: 500px;
+}
+
+
+
+
+@media only screen 
+and (max-device-width : 360px)  {
+
+}
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px)  {
+    header #map .map-container img{
+        width: 770px;
+    }
+    header #map .list-container img{
+        width: 700px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 640px) 
+and (max-device-width : 768px)  {
+    header #map .map-container img{
+        width: 770px;
+    }
+    header #map .list-container img{
+        width: 770px;
+    }
+}
+
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    header #map .map-container img{
+        width: 800px;
+    }
+    header #map .list-container img{
+        width: 800px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) {
+    #map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    header #map .map-container img{
+        width: 650px;
+    }
+    header #map .list-container img{
+        width: 346px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 1366px) {
+    #map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    header #map .map-container img{
+        width: 800px;
+    }
+    header #map .list-container img{
+        width: 426px;
+    }
+}

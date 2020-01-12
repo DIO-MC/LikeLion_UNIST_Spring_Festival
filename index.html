@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles.css" type="text/css" rel="stylesheet">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>더 위 사 냥 뿌 셔 뿌 셔</title>
+
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 파도 -->
+    <div class="main">
+            <!-- 낮과밤  --> 
+        <div id="header_img">
+            <div id="navbar">
+                <div class="sun"><a href="#"><img src="images/New_Sun.png" alt=""></a></div>
+                <div class="moon"><a href="#"><img src="images/New_Moon.png" alt=""></a></div>
+                </div>
+            <id id="title">
+                <div>
+                    <!-- <h1>☆청춘☆<br/>~이야~</h1> -->
+                </div>
+            
+            </id>
+            <div class="content"> 
+                <div class="performance"><a href="./busking.html" ><img src="images/newbusking.png" alt=""></a><br/>축제공연</div>
+                <div class="foodtruck"><a href="./foodtruck.html" ><img src="images/foodtruck2.png" alt=""></a><br/>푸드트럭</div>
+                <div class="club"><a href="./clubbooth.html" ><img src="images/new_clubbooth.png" alt=""></a><br/>동아리부스</div>
+                <div class="event"><a href="./event.html" ><img src="images/events.png"></a><br/>체험부스</div>
+            </div>  
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="1"><a href="https://www.facebook.com/likelion.UNIST/" ><img src="images/unilion.png"></a></div>
+        <div class="2"><a href="https://www.facebook.com/UNISTusc/" ><img src="images/fruits_chonghak.png"></a></div>
+        <div class="3"><a href="https://www.facebook.com/unistclubunion/?__tn__=%2Cd%2CP-R&eid=ARANTomt13Kf5VcDwAKgDb8utIQXQNC19arNHqm6Qc9WUp8J3f1VscoGiUKgrwrVkO_BX8I2R0rEaBhp" ><img src="images/clubunion.png"></a></div>
+        <div class="4"><a href="https://www.facebook.com/studioingam/?epa=SEARCH_BOX" ><img src="images/studioingam.png"></a></div>
+        <div class="5"><a href="https://www.facebook.com/unistmediacenter/?epa=SEARCH_BOX" ><img src="images/unistation.png"></a></div>  
+        
+    </footer>
+
+
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- 자바스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(function () {
+            $('.sun').click(function () {
+                //클릭될때
+                $('#header_img').css('background-image', 'url(images/ActualMorningTime.png)');
+		//img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라 
+                return false; // 페이지 전환 막기
+
+            });
+        });
+        $(function () {
+            $('.moon').click(function () {
+                //클릭될때
+                $('#header_img').css('background-image', 'url(images/ActualDinnerTime.png)');
+		//img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라 
+                return false; // 페이지 전환 막기
+
+            });
+        });
+        $(function () {
+            $('.sun').click(function () {
+                //클릭될때
+                $('.performance img').attr('src', 'images/newbusking.png');
+		//img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라 
+                return false; // 페이지 전환 막기
+
+            });
+        });
+
+        $(function () {
+            $('.moon').click(function () {
+                //클릭될때
+                $('.performance img').attr('src', 'images/concert.png').parent().attr('href','./nightconcert.html');
+        //img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라
+                return false; // 페이지 전환 막기
+
+            });
+        });
+        $(function () {
+            $('.moon').click(function () {
+                //클릭될때
+                $('.club img').attr('src', 'images/snackcart.png').parent().attr('href','./snackcart.html');
+		//img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라 
+                return false; // 페이지 전환 막기
+
+            });
+        });
+        $(function () {
+            $('.sun').click(function () {
+                //클릭될때
+                $('.club img').attr('src', 'images/new_clubbooth.png');
+		//img의 src 속성값을 this(해당태그(img)의 href 값으로 바꿔라 
+                return false; // 페이지 전환 막기
+
+            });
+        });
+       
+
+    
+    </script>
+</body>
+</html>

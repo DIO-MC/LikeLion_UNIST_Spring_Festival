@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Jua";
+  }
+  @font-face{
+	src: url("BMJUA.otf");
+	font-family: "Jua";
+}
+
+
+.title{
+    text-align: center;
+}
+
+/* .fas.fa-arrow-alt-circle-right{
+    color : black;
+}
+.fas.fa-arrow-alt-circle-left{
+    color:black;
+} */
+
+h1{
+    font-size: 25px !important;
+}
+.content{
+    padding:10px 20px 20px 20px;
+}
+.card_parent{
+    margin-top:10px;
+    font-size: 30px;
+}  
+/* .carousel-image div img{ */
+    /* min-height: 500px; */
+    /* max-height: 500px;
+    width: auto;
+} */
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row .card img{
+    min-height: 96px;
+}
+
+
+
+header #map .map-container img{
+    width: 800px;
+}
+header #map .list-container img{
+    width: 500px;
+}
+
+
+
+
+@media only screen 
+and (max-device-width : 360px)  {
+    .card_parent{
+        margin-top:10px;
+        font-size: 10px;
+    }  
+}
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px)  {
+    header #map .map-container img{
+        width: 770px;
+    }
+    header #map .list-container img{
+        width: 700px;
+    }
+    .card_parent{
+        margin-top:10px;
+        font-size: 10px;
+    }  
+}
+
+@media only screen 
+and (min-device-width : 640px) 
+and (max-device-width : 768px)  {
+    header #map .map-container img{
+        width: 770px;
+    }
+    header #map .list-container img{
+        width: 770px;
+    }
+}
+
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    header #map .map-container img{
+        width: 800px;
+    }
+    header #map .list-container img{
+        width: 800px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) {
+    #map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    header #map .map-container img{
+        width: 650px;
+    }
+    header #map .list-container img{
+        width: 346px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 1366px) {
+    #map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    header #map .map-container img{
+        width: 800px;
+    }
+    header #map .list-container img{
+        width: 426px;
+    }
+}
